@@ -1,0 +1,158 @@
+/* General Body Styles */
+.fertilizer {
+    background-image: url("../components/images/formimg.jpeg"); /* Add your background image URL */
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100dvh !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form Container */
+.fertilizer .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styles */
+.fertilizer #crop-form {
+    background: rgba(255, 255, 255, 0.2); 
+    width: fit-content;
+    backdrop-filter: blur(10px); 
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 2rem; 
+    margin-top: 10dvh !important;
+    color: #000;
+    margin-left: -60px;
+}
+
+/* Form Title */
+.fertilizer #crop-form-title {
+    margin-bottom: 13px;
+    text-align: center !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black; 
+}
+
+/* Form Label Styles */
+.fertilizer .form-label {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.9rem;
+    font-weight: 700 !important;
+    background: transparent 30%;
+    color: #000; 
+}
+
+/* Form Control (Inputs & Selects) */
+.fertilizer .form-control, 
+.fertilizer .form-select {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+    color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.6); 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 15px;
+}
+
+/* Input Group Layout */
+.fertilizer .input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fertilizer .input-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.fertilizer .input-group-item:last-child {
+    margin-right: 0;
+}
+
+/* Button Styles */
+.fertilizer .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.fertilizer .btn-success {
+    background-color: rgba(36, 247, 17, 0.607); 
+    border: none;
+    color: #000;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease;
+}
+
+.fertilizer .btn-success:hover {
+    background-color: rgb(1, 166, 34);
+}
+
+.fertilizer .btn-primary {
+    background-color: #04522edb;
+}
+
+.fertilizer .btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.fertilizer .modal {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 40%;
+    position: fixed;
+    top: 46.5%;
+    left: 51.55%;
+    background: rgba(255, 255, 255, 0.4); 
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.fertilizer .modal-content {
+    border: none;
+}
+
+.fertilizer .modal-header, 
+.fertilizer .modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.fertilizer .modal-title{   
+    font-size: 20px;
+}
+
+.fertilizer .modal-body {
+    display: flex;
+    width: 300px;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 700px) {
+    .fertilizer #crop-form {
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+}
